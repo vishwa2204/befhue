@@ -1,0 +1,387 @@
+:root {
+    --main-color: #ff004f;
+    --secondary-color: white;
+    --grey-color: #303030;
+}
+
+/* technologies-content  */
+
+.technologies-section {
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+/* 
+.technologies-title {
+    margin-bottom: 3%;
+}
+
+.technologies-title h2 {
+    color: var(--main-color);
+    font-weight: 700;
+}
+
+.technologies-title h2 span {
+    color: var(--grey-color);
+} */
+
+.technologies-content .nav-pills .active {
+    background-color: var(--grey-color) !important;
+    color: white !important;
+
+}
+
+.tab-content {
+    margin-top: 5%;
+    width: 100%;
+    height: auto;
+}
+
+.technologies-content ul {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 3px;
+    justify-content: space-between !important;
+
+}
+
+.technologies-content ul li {
+    width: auto;
+}
+
+.technologies-content ul li button {
+    color: white !important;
+    padding: 30px;
+    width: 100%;
+    background-color: #ff004f !important;
+    font-weight: 500;
+    font-size: 17px;
+}
+
+.technologies-content ul li:nth-child(1),
+.technologies-content ul li:nth-child(2),
+.technologies-content ul li:nth-child(3) {
+    width: 33%;
+}
+
+.technologies-content ul li:nth-child(4),
+.technologies-content ul li:nth-child(7) {
+    width: 66.5%;
+}
+
+.technologies-content ul li:nth-child(5),
+.technologies-content ul li:nth-child(6) {
+    width: 33%;
+}
+
+@media screen and (max-width:500px) {
+
+    .technologies-content ul li button {
+        font-size: 17px;
+    }
+
+    .technologies-content ul li:nth-child(1),
+    .technologies-content ul li:nth-child(2),
+    .technologies-content ul li:nth-child(3) {
+        width: 100%;
+    }
+
+    .technologies-content ul li:nth-child(4),
+    .technologies-content ul li:nth-child(7) {
+        width: 100%;
+    }
+
+    .technologies-content ul li:nth-child(5),
+    .technologies-content ul li:nth-child(6) {
+        width: 100%;
+    }
+
+}
+
+
+@media screen and (min-width:500px) and (max-width:768px) {
+
+    .technologies-content ul li button {
+        font-size: 12px;
+    }
+
+    .technologies-content ul li:nth-child(1),
+    .technologies-content ul li:nth-child(2),
+    .technologies-content ul li:nth-child(3) {
+        width: 47%;
+    }
+
+    .technologies-content ul li:nth-child(4),
+    .technologies-content ul li:nth-child(7) {
+        width: 47%;
+    }
+
+    .technologies-content ul li:nth-child(5),
+    .technologies-content ul li:nth-child(6) {
+        width: 47%;
+    }
+
+}
+
+
+hr {
+    width: 100%;
+    margin: 0rem !important;
+}
+
+.tab-content .active {
+    width: 100%;
+    display: flex !important;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.tab-boxs {
+    width: 100%;
+    height: auto;
+    margin-bottom: 5%;
+    padding: 0 50px 0 50px;
+}
+
+.tab-boxs p {
+    font-size: 20px !important;
+
+}
+
+.tab-boxs .tab-box-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+}
+
+
+.tab-boxs .tab-box-container .tab-content-boxes {
+    width: 45%;
+    height: auto;
+    background-color: var(--main-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3%;
+    border-radius: 5px;
+}
+
+.tab-boxs .tab-box-container .tab-content-boxes:nth-child(even) {
+    background-color: var(--grey-color);
+
+}
+
+.tab-boxs .tab-box-container .tab-content-boxes h4 {
+    margin-bottom: 0;
+    color: white;
+    font-size: 20px;
+}
+
+@media screen and (max-width:768px) {
+
+    .tab-boxs p {
+        font-size: 17px !important;
+
+    }
+
+    .tab-boxs {
+        padding: 0 10px 0 10px;
+    }
+
+
+    .tab-boxs .tab-box-container .tab-content-boxes {
+        width: 100%;
+        height: auto;
+        padding: 30px;
+    }
+}
+
+
+/* ////////////////////////////// */
+
+.tab-bigBox-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: end;
+    gap: 20px;
+    padding: 0 50px 0 50px;
+}
+
+.tab-bigBox-container h3 {
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 2%;
+    font-weight: 700;
+}
+
+.tab-bigBox-container .bigBox-content-container {
+    width: 100%;
+    height: auto;
+    text-align: start;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.tab-bigBox-container .bigBox-content-container .bigBox-container-boxs {
+    width: 100%;
+    height: 400px;
+    background-color: var(--main-color);
+    padding: 3%;
+    border-radius: 5px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 50px;
+    gap: 25px;
+}
+
+
+.tab-bigBox-container .bigBox-content-container .bigBox-container-boxs h4 {
+    font-size: 25px !important;
+    font-weight: 600 !important;
+
+}
+
+.tab-bigBox-container .bigBox-content-container:nth-child(1),
+.tab-bigBox-container .bigBox-content-container:nth-child(2),
+.tab-bigBox-container .bigBox-content-container:nth-child(5),
+.tab-bigBox-container .bigBox-content-container:nth-child(6) {
+    width: 47%;
+    height: 100%;
+
+}
+
+.tab-bigBox-container .bigBox-content-container:nth-child(even) .bigBox-container-boxs {
+    background-color: var(--grey-color);
+}
+
+.tab-bigBox-container .bigBox-content-container:nth-child(6) .bigBox-container-boxs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (max-width:768px) {
+
+    .tab-bigBox-container {
+
+        padding: 0 10px 0 10px;
+    }
+
+
+    .tab-bigBox-container .bigBox-content-container:nth-child(1),
+    .tab-bigBox-container .bigBox-content-container:nth-child(2),
+    .tab-bigBox-container .bigBox-content-container:nth-child(5),
+    .tab-bigBox-container .bigBox-content-container:nth-child(6) {
+        width: 100%;
+        height: 100%;
+
+    }
+
+    .tab-bigBox-container .bigBox-content-container .bigBox-container-boxs {
+        height: auto;
+        padding: 8%;
+        padding-left: 30px;
+    }
+
+    .tab-bigBox-container .bigBox-content-container .bigBox-container-boxs h4 {
+        font-size: 15px !important;
+
+    }
+
+}
+
+@media screen and (min-width:768px) and (max-width:1024px) {
+
+    .tab-bigBox-container .bigBox-content-container:nth-child(1),
+    .tab-bigBox-container .bigBox-content-container:nth-child(2),
+    .tab-bigBox-container .bigBox-content-container:nth-child(5),
+    .tab-bigBox-container .bigBox-content-container:nth-child(6) {
+        width: 47%;
+        height: 100%;
+
+    }
+
+    .tab-bigBox-container .bigBox-content-container .bigBox-container-boxs {
+        height: 500px;
+        padding: 8%;
+        padding-left: 30px;
+    }
+
+    .tab-bigBox-container {
+
+        padding: 0 5px 0 5px;
+    }
+}
+
+/* ///////////////////////////////// */
+
+.tab-splitBox-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 5%;
+    flex-wrap: wrap;
+}
+
+.tab-splitBox-container .tab-splitBoxs-num{
+    width: 40%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.tab-splitBox-container .tab-splitBoxs-num h3{
+    margin-bottom: 5%;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+@media screen and (max-width:768px) {
+    .tab-splitBox-container .tab-splitBoxs-num h3{
+        margin-bottom: 1% !important;
+        font-size: 20px;
+        font-weight: 700;
+    }
+    .tab-splitBox-container .tab-splitBoxs-num{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-bottom: 5%;
+    }
+    
+}
+
+.tab-splitBox-container .tab-splitBoxs-num .tab-splitContent{
+    width: 100%;
+    background-color: var(--main-color);
+    padding: 5%;
+    border-radius: 5px;
+}
+
+.tab-splitBox-container .tab-splitBoxs-num .tab-splitContent:nth-child(odd){
+    background-color: var(--grey-color);
+}
+
+.tab-splitBox-container .tab-splitBoxs-num .tab-splitContent h4{
+    color: white;
+    margin-bottom: 0;
+}
+
+
+

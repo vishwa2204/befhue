@@ -1,0 +1,382 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap');
+
+:root {
+ --main-color:#ff004f;
+ --secondary-color:white;
+ --grey-color:#303030;
+}
+p{
+  font-family: "Montserrat", sans-serif !important;
+  font-size: 15px;
+  text-align: justify;
+  /* color: var(--grey-color) !important; */
+}
+
+
+.banner-section{
+    width:100%;
+    height:100%;
+}
+.bannersection-container{
+    width:100%;
+    height:100%;
+}
+.banner-section-boxes{
+    width:100%;
+    height:100%;
+}
+.banner-section-images{
+    width:100%;
+    height:100%;
+}
+.banner-section-images img{
+    width:100% !important;
+    height:550px !important;
+    padding-top: 0 !important;
+}
+
+
+.aboutus-images img{
+    width:100% !important;
+    height:100% !important;
+}
+
+/* about viion mission goal section start */
+.vision-mission-section{
+    width:100%;
+    height:100%;
+   background-color: var(--main-color);
+   color:white;
+   /* margin-top: 5% !important; */
+}
+.vision-mission-container{
+    width:100%;
+    height:100%;
+}
+.vision-mission-boxes{
+    width:100%;
+    height:100%;
+}
+.vision-mission-boxes h5{
+    /* text-align: center !important; */
+    padding-top: 5% !important;
+    /* font-size: 35px !important; */
+    color: white !important;
+}
+.about-branding{
+    width:100%;
+    height:100%;
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: space-evenly;
+    /* margin-bottom: 5% !important; */
+    padding-top: 5% !important;
+    padding-bottom:5% !important;
+}
+.about-branding h5{
+    text-align:none;
+}
+.about-branding-head{
+    width:47%;
+    height:100%;
+}
+.about-branding-para{
+    width:47%;
+    height:100%;
+}
+
+
+@media screen and (max-width:320px) {
+/* about viion mission goal section start */
+.vision-mission-section{
+    width:100%;
+    height:100%;
+   background-color: var(--main-color);
+   color:white;
+   /* margin-top: 5% !important; */
+}
+.vision-mission-container{
+    width:100%;
+    height:100%;
+}
+.vision-mission-boxes{
+    width:100%;
+    height:100%;
+}
+.vision-mission-boxes h5{
+    /* text-align: center !important; */
+    padding-top: 5% !important;
+    /* font-size: 35px !important; */
+    color: white !important;
+}
+.about-branding{
+    width:100%;
+    height:100%;
+    /* display: flex; */
+    flex-direction: column;
+    justify-content: space-evenly;
+    /* margin-bottom: 5% !important; */
+    padding-top: 5% !important;
+    padding-bottom:5% !important;
+}
+.about-branding h5{
+    text-align:none;
+}
+.about-branding-head{
+    width:100%;
+    height:100%;
+}
+.about-branding-para{
+    width:100%;
+    height:100%;
+}
+
+
+
+}
+@media screen and (min-width:321px) and (max-width:425px) {
+    /* about viion mission goal section start */
+.vision-mission-section{
+    width:100%;
+    height:100%;
+   background-color: var(--main-color);
+   color:white;
+   /* margin-top: 5% !important; */
+}
+.vision-mission-container{
+    width:100%;
+    height:100%;
+}
+.vision-mission-boxes{
+    width:100%;
+    height:100%;
+}
+.vision-mission-boxes h5{
+    /* text-align: center !important; */
+    padding-top: 5% !important;
+    /* font-size: 35px !important; */
+    color: white !important;
+}
+.about-branding{
+    width:100%;
+    height:100%;
+    /* display: flex; */
+    flex-direction: column;
+    justify-content: space-evenly;
+    /* margin-bottom: 5% !important; */
+    padding-top: 5% !important;
+    padding-bottom:5% !important;
+}
+.about-branding h5{
+    text-align:none;
+}
+.about-branding-head{
+    width:100%;
+    height:100%;
+}
+.about-branding-para{
+    width:100%;
+    height:100%;
+}
+
+
+
+}
+@media screen and (min-width:425px) and (max-width:600px) { 
+    /* about viion mission goal section start */
+.vision-mission-section{
+    width:100%;
+    height:100%;
+   background-color: var(--main-color);
+   color:white;
+   /* margin-top: 5% !important; */
+}
+.vision-mission-container{
+    width:100%;
+    height:100%;
+}
+.vision-mission-boxes{
+    width:100%;
+    height:100%;
+}
+.vision-mission-boxes h5{
+    /* text-align: center !important; */
+    padding-top: 5% !important;
+    /* font-size: 35px !important; */
+    color: white !important;
+}
+.about-branding{
+    width:100%;
+    height:100%;
+    /* display: flex; */
+    flex-direction: column;
+    justify-content: space-evenly;
+    /* margin-bottom: 5% !important; */
+    padding-top: 5% !important;
+    padding-bottom:5% !important;
+}
+.about-branding h5{
+    text-align:none;
+}
+.about-branding-head{
+    width:100%;
+    height:100%;
+}
+.about-branding-para{
+    width:100%;
+    height:100%;
+}
+
+
+
+}
+@media screen and (min-width:601px) and (max-width:768px) { 
+    /* about viion mission goal section start */
+.vision-mission-section{
+    width:100%;
+    height:100%;
+   background-color: var(--main-color);
+   color:white;
+   /* margin-top: 5% !important; */
+}
+.vision-mission-container{
+    width:100%;
+    height:100%;
+}
+.vision-mission-boxes{
+    width:100%;
+    height:100%;
+}
+.vision-mission-boxes h5{
+    /* text-align: center !important; */
+    padding-top: 5% !important;
+    /* font-size: 35px !important; */
+    color: white !important;
+}
+.about-branding{
+    width:100%;
+    height:100%;
+    /* display: flex; */
+    flex-direction: column;
+    justify-content: space-evenly;
+    /* margin-bottom: 5% !important; */
+    padding-top: 5% !important;
+    padding-bottom:5% !important;
+}
+.about-branding h5{
+    text-align:none;
+}
+.about-branding-head{
+    width:100%;
+    height:100%;
+}
+.about-branding-para{
+    width:100%;
+    height:100%;
+}
+
+
+
+}
+@media screen and (min-width:769px) and (max-width:900px) {
+    /* about viion mission goal section start */
+.vision-mission-section{
+    width:100%;
+    height:100%;
+   background-color: var(--main-color);
+   color:white;
+   /* margin-top: 5% !important; */
+}
+.vision-mission-container{
+    width:100%;
+    height:100%;
+}
+.vision-mission-boxes{
+    width:100%;
+    height:100%;
+}
+.vision-mission-boxes h5{
+    /* text-align: center !important; */
+    padding-top: 5% !important;
+    /* font-size: 35px !important; */
+    color: white !important;
+}
+.about-branding{
+    width:100%;
+    height:100%;
+    /* display: flex; */
+    flex-direction: column;
+    justify-content: space-evenly;
+    /* margin-bottom: 5% !important; */
+    padding-top: 5% !important;
+    padding-bottom:5% !important;
+}
+.about-branding h5{
+    text-align:none;
+}
+.about-branding-head{
+    width:100%;
+    height:100%;
+}
+.about-branding-para{
+    width:100%;
+    height:100%;
+}
+
+
+
+}
+@media screen and (min-width:901px) and (max-width:992px) {
+    /* about viion mission goal section start */
+.vision-mission-section{
+    width:100%;
+    height:100%;
+   background-color: var(--main-color);
+   color:white;
+   /* margin-top: 5% !important; */
+}
+.vision-mission-container{
+    width:100%;
+    height:100%;
+}
+.vision-mission-boxes{
+    width:100%;
+    height:100%;
+}
+.vision-mission-boxes h5{
+    /* text-align: center !important; */
+    padding-top: 5% !important;
+    /* font-size: 35px !important; */
+    color: white !important;
+}
+.about-branding{
+    width:100%;
+    height:100%;
+    /* display: flex; */
+    flex-direction: column;
+    justify-content: space-evenly;
+    /* margin-bottom: 5% !important; */
+    padding-top: 5% !important;
+    padding-bottom:5% !important;
+}
+.about-branding h5{
+    text-align:none;
+}
+.about-branding-head{
+    width:100%;
+    height:100%;
+}
+.about-branding-para{
+    width:100%;
+    height:100%;
+}
+
+
+
+}
+@media screen and (min-width:993px) and (max-width:1024px) {
+}
+@media screen and (min-width:1025px) and (max-width:1140px) {}
