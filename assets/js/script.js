@@ -40,18 +40,14 @@ counters.forEach(counter => {
 
 
 
-//  -------------------- testimonial section start -------------------------------
-// var swiper = new Swiper(".mySwiper", {
-//     slidesPerView: 1,
-//     grabCursor: true,
-//     loop: true,
-//     pagination: {
-//       el: ".swiper-pagination",
-//       clickable: true,
-//     },
-//     navigation: {
-//       nextEl: ".swiper-button-next",
-//       prevEl: ".swiper-button-prev",
-//     },
-//   });
 
+
+
+
+
+
+    var cursor = document.querySelector(".cursor-1");
+
+    document.addEventListener("mousemove", function (e) {
+        cursor.style.cssText = "left: " + e.clientX + "px ; top: " + e.clientY + "px;";
+    });

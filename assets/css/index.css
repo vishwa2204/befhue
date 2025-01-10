@@ -7149,3 +7149,19 @@ padding-left: 0%;
 .owl-dots{
   display: none !important;
 }
+
+
+.cursor-1 {
+  position: fixed;
+  width: 30px;
+  height: 30px;
+  border: 2px solid var(--main-color);
+  border-radius: 50%;
+  left: 0;
+  top: 0;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  transition: 0s ease-out;
+  z-index: 999 !important;
+}
+
