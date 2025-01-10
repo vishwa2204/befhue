@@ -9,8 +9,6 @@
   padding: 0;
   box-sizing: border-box;
   transition: 0.3s linear;
-  font-family: "Montserrat", sans-serif !important;
-
 }
 
 :root {
@@ -24,7 +22,11 @@ p{
   text-align: justify;
   /* color: var(--grey-color) !important; */
 }
+body{
+  
+  font-family: "Montserrat", sans-serif !important;
 
+}
 
 h4{
   font-family: "Montserrat", medium;
