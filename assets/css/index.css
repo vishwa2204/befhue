@@ -7169,13 +7169,13 @@ padding-left: 0%;
 
 .reveal {
   position: relative;
-  transform: translateX(-50px);
+  transform: translateY(50px);
   opacity: 0;
   transition: all 0.5s linear;
 }
 
 .reveal.active {
-  transform: translateX(0px);
+  transform: translateY(0px);
   opacity: 1;
 }
 
