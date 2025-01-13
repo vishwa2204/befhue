@@ -42,12 +42,37 @@ counters.forEach(counter => {
 
 
 
+const cursor = document.querySelector(".cursor-1");
+
+document.addEventListener("mousemove", (e) => {
+  const { clientX: x, clientY: y } = e;
+
+  // Correctly position the circle with `translate(-50%, -50%)`
+  cursor.style.transform = `translate(${x}px, ${y}px)`;
+});
 
 
+// Reveal 
 
+window.addEventListener('scroll', reveal);
 
-    var cursor = document.querySelector(".cursor-1");
+function reveal() {
+  var reveals = document.querySelectorAll('.reveal');
 
-    document.addEventListener("mousemove", function (e) {
-        cursor.style.cssText = "left: " + e.clientX + "px ; top: " + e.clientY + "px;";
-    });
+  for (var i = 0; i < reveals.length; i++) {
+    var windowHeight = window.innerHeight;
+
+    var revealtop = reveals[i].getBoundingClientRect().top;
+
+    var revealPoint = 50;
+
+    if (revealtop < windowHeight - revealPoint) {
+      reveals[i].classList.add('active');
+    }
+    else {
+      reveals[i].classList.remove('active');
+    }
+
+    
+  }
+}
