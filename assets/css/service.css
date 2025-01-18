@@ -29,6 +29,7 @@
 .technologies-content .nav-pills .active {
     background-color: var(--grey-color) !important;
     color: white !important;
+    border: 1px solid #fff;
 
 }
 
