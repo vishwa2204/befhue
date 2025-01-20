@@ -1,34 +1,40 @@
 //////////////////////// Form Popup /////////////////////////////////////////////
 
+// Select elements
 let popup = document.querySelector('.popup-form');
 let closeBtn = document.querySelector('#close');
 
-window.addEventListener("load", function () {
-    this.setTimeout(
-        function open() {
-            popup.style.scale = "1";
-            popup.classList.toggle('rot')
-            if (popup.style.scale = "1") {
-                document.querySelector('.body').classList.toggle('blur');
+// Check if the popup has already been shown
+let isPopupShown = localStorage.getItem('isPopupShown');
+
+// Show the popup only if it hasn't been shown before
+if (!isPopupShown) {
+    window.addEventListener("load", function () {
+        setTimeout(function open() {
+            popup.style.scale = "1"; // Show the popup
+            popup.classList.toggle('rot');
+            if (popup.style.scale === "1") {
+                document.querySelector('.body').classList.toggle('blur'); // Add blur effect to the background
             }
+        }, 1000); // Delay of 1 second before showing the popup
+    });
+}
 
-        }, 1000
-    );
-
-
-});
-
+// Close button functionality
 closeBtn.addEventListener("click", function () {
-    popup.classList.toggle('rot')
-    popup.style.scale = "0";
+    popup.classList.toggle('rot');
+    popup.style.scale = "0"; // Hide the popup
 
-    if (popup.style.scale = "0") {
-        document.querySelector('.body').classList.remove('blur');
-
+    if (popup.style.scale === "0") {
+        document.querySelector('.body').classList.remove('blur'); // Remove blur effect
     }
-});
 
-// ////////////////////////Navbar /////////////////////
+    // Mark popup as shown in localStorage to prevent it from showing again
+    localStorage.setItem('isPopupShown', 'true');
+});
+//////////////////////// Navbar /////////////////////
+
+
 //---------------- counter section start-------------------------------------------------------
 
 const counters = document.querySelectorAll('.count');
