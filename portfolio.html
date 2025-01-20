@@ -399,8 +399,15 @@
     <footer>
         <div class="footer-communicate">
             <h3 style="color: white;">About befhue</h3>
-            <p>we’re your go to graphic design agency, turning your brand’s ideas into beautiful visual experiences. We
-                specialise in logo design, brand identity, web design, packaging design and digital marketing.</p>
+             <p>We’re graphic design and video editing agency, turning your
+                brand’s ideas into beautiful visual experiences. We
+                specialise in logo design, brand identity, web design,
+                packaging design and digital marketing. Our team of graphic
+                designers bring artistic talent and strategic thinking to every
+                design so it looks great and works for your business. We’re proud
+                of our quality and client satisfaction, delivering designs that speak
+                to your audience and raise your brand.</p>
+
 
         </div>
         <div class="footer-communicate">
@@ -491,32 +498,38 @@
 
 
     <script>
-
-        // Home Form
         function contact(event) {
-            event.preventDefault(); // Prevent form submission
-            var name = document.getElementById("fname").value;
-            var email = document.getElementById("Email").value;
-            var number = document.getElementById("Call").value;
-            var message = document.getElementById("country").value;
+            // Prevent the default form submission behavior
+            event.preventDefault();
 
-            if (name === "" || email === "" || number === "" || message === "") {
+            // Retrieve input values
+            var name = document.getElementById("name").value;
+            var email = document.getElementById("email").value;
+            var number = document.getElementById("number").value;
+            var message = document.getElementById("message").value;
+
+            // Validate fields
+            if (!name || !email || !number || !message) {
+
+                return false; // Prevent further action
                 alert("Enter All Fields");
-            } else {
-                // Format the message content
-                var formattedMessage = encodeURIComponent(
-                    "Name: " + name + "\n" +
-                    "Email: " + email + "\n" +
-                    "Mobile Number: " + number + "\n" +
-                    "Message: " + message
-                );
-
-                // Construct the WhatsApp URL
-                var url = "https://wa.me/+919342470592?text=" + formattedMessage;
-
-                // Open the WhatsApp URL in a new tab/window
-                window.open(url, '_blank');
             }
+
+            // Format the message content
+            var formattedMessage = encodeURIComponent(
+                "Name: " + name + "\n" +
+                "Email: " + email + "\n" +
+                "Mobile Number: " + number + "\n" +
+                "Message: " + message
+            );
+
+            // Construct the WhatsApp URL
+            var url = "https://wa.me/+919342470592?text=" + formattedMessage;
+
+            // Open the WhatsApp URL in a new tab/window
+            window.open(url, '_blank');
+
+            return false; // Prevent form submission
         }
     </script>
 

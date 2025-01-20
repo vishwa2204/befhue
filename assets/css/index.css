@@ -697,25 +697,29 @@ hr.ourservice-horizondalrole {
   align-items: center;
   width: 100%;
   height: 100%;
-  z-index: 999;
 }
 
 .marquee span {
-  display: inline-block;
-  padding-left: 100%;
+  /* display: inline-block; */
+  /* padding-left: 100%; */
   -webkit-text-stroke: 0.5px #f8fcfa;
   color: var(--grey-color);
   font-weight: 900;
   white-space: nowrap;
-  line-height: 140px;
-  background-image: url(../images/png/befhue\ png-05.png);
-
-  background-size: contain;
+  /* line-height: 140px; */
+  /* background-image: url(../images/png/befhue\ png-05.png); */
+  /* background-size: contain; */
   /* Match the container height */
-  width:100px !important  ;
+  width:100% !important ;
   height: 100px;
+  display: flex;
+  align-items: center;
   font-size: 80px;
   animation: marquee 10s linear infinite;
+}
+
+.marquee span img{
+  width: 25% !important;
 }
 
 .marquee2 span {
@@ -1058,7 +1062,7 @@ hr.tick {
 
 .about-academy h5 {
   text-align: center;
-  font-family: "Archivo", sans-serif;
+  /* font-family: "Archivo", sans-serif; */
   font-size: 25px;
   color: var(--color);
   font-weight: 600;
@@ -1068,13 +1072,13 @@ hr.tick {
 
 .about-academy h6 {
   text-align: center;
-  font-family: "DM Sans", sans-serif !important;
+  /* font-family: "DM Sans", sans-serif !important; */
   font-size: 40px;
 }
 
 .about-academy p {
   text-align: center;
-  font-family: "Archivo", sans-serif;
+  /* font-family: "Archivo", sans-serif; */
   font-size: 18px;
 }
 
@@ -1766,7 +1770,7 @@ hr.tick {
 
   .about-academy h5 {
     text-align: center;
-    font-family: "Archivo", sans-serif;
+    /* font-family: "Archivo", sans-serif; */
     font-size: 20px !important;
     color: var(--color);
     font-weight: 600;
@@ -1776,13 +1780,13 @@ hr.tick {
 
   .about-academy h6 {
     text-align: center;
-    font-family: "DM Sans", sans-serif !important;
+    /* font-family: "DM Sans", sans-serif !important; */
     font-size: 40px;
   }
 
   .about-academy p {
     text-align: center;
-    font-family: "Archivo", sans-serif;
+    /* font-family: "Archivo", sans-serif; */
     font-size: 18px;
   }
 
@@ -1819,7 +1823,7 @@ hr.tick {
 
   .programe-image img {
     width: 100%;
-    height: 420px;
+    height: 650px;
     border-radius: 10px;
     overflow: hidden;
     object-fit: cover;
@@ -2401,7 +2405,7 @@ hr.tick {
 
   .about-academy h5 {
     text-align: center;
-    font-family: "Archivo", sans-serif;
+    /* font-family: "Archivo", sans-serif; */
     font-size: 25px;
     color: var(--color);
     font-weight: 600;
@@ -2411,13 +2415,13 @@ hr.tick {
 
   .about-academy h6 {
     text-align: center;
-    font-family: "DM Sans", sans-serif !important;
+    /* font-family: "DM Sans", sans-serif !important; */
     font-size: 40px;
   }
 
   .about-academy p {
     text-align: center;
-    font-family: "Archivo", sans-serif;
+    /* font-family: "Archivo", sans-serif; */
     font-size: 18px;
   }
 
@@ -2453,7 +2457,7 @@ hr.tick {
 
   .programe-image img {
     width: 100%;
-    height: 420px;
+    height: 650px;
     border-radius: 10px;
     overflow: hidden;
     object-fit: cover;
@@ -3025,7 +3029,7 @@ hr.tick {
 
   .about-academy h5 {
     text-align: center;
-    font-family: "Archivo", sans-serif;
+    /* font-family: "Archivo", sans-serif; */
     font-size: 25px;
     color: var(--color);
     font-weight: 600;
@@ -3035,13 +3039,13 @@ hr.tick {
 
   .about-academy h6 {
     text-align: center;
-    font-family: "DM Sans", sans-serif !important;
+    /* font-family: "DM Sans", sans-serif !important; */
     font-size: 40px;
   }
 
   .about-academy p {
     text-align: center;
-    font-family: "Archivo", sans-serif;
+    /* font-family: "Archivo", sans-serif; */
     font-size: 18px;
   }
 
@@ -3077,7 +3081,7 @@ hr.tick {
 
   .programe-image img {
     width: 100%;
-    height: 420px;
+    height: 650px;
     border-radius: 10px;
     overflow: hidden;
     object-fit: cover;
@@ -3649,7 +3653,7 @@ hr.tick {
 
   .about-academy h5 {
     text-align: center;
-    font-family: "Archivo", sans-serif;
+    /* font-family: "Archivo", sans-serif; */
     font-size: 25px;
     color: var(--color);
     font-weight: 600;
@@ -3659,13 +3663,13 @@ hr.tick {
 
   .about-academy h6 {
     text-align: center;
-    font-family: "DM Sans", sans-serif !important;
+    /* font-family: "DM Sans", sans-serif !important; */
     font-size: 40px;
   }
 
   .about-academy p {
     text-align: center;
-    font-family: "Archivo", sans-serif;
+    /* font-family: "Archivo", sans-serif; */
     font-size: 18px;
   }
 
@@ -4273,7 +4277,7 @@ hr.tick {
 
   .about-academy h5 {
     text-align: center;
-    font-family: "Archivo", sans-serif;
+    /* font-family: "Archivo", sans-serif; */
     font-size: 25px;
     color: var(--color);
     font-weight: 600;
@@ -4283,13 +4287,13 @@ hr.tick {
 
   .about-academy h6 {
     text-align: center;
-    font-family: "DM Sans", sans-serif !important;
+    /* font-family: "DM Sans", sans-serif !important; */
     font-size: 40px;
   }
 
   .about-academy p {
     text-align: center;
-    font-family: "Archivo", sans-serif;
+    /* font-family: "Archivo", sans-serif; */
     font-size: 18px;
   }
 
@@ -4897,7 +4901,7 @@ hr.tick {
 
   .about-academy h5 {
     text-align: center;
-    font-family: "Archivo", sans-serif;
+    /* font-family: "Archivo", sans-serif; */
     font-size: 25px;
     color: var(--color);
     font-weight: 600;
@@ -4907,13 +4911,13 @@ hr.tick {
 
   .about-academy h6 {
     text-align: center;
-    font-family: "DM Sans", sans-serif !important;
+    /* font-family: "DM Sans", sans-serif !important; */
     font-size: 40px;
   }
 
   .about-academy p {
     text-align: center;
-    font-family: "Archivo", sans-serif;
+    /* font-family: "Archivo", sans-serif; */
     font-size: 18px;
   }
 
@@ -4960,7 +4964,7 @@ hr.tick {
     width: 100%;
     height: 35%;
     position: absolute;
-    background-color: whitesmoke;
+    /* background-color: whitesmoke; */
     bottom: 0;
     left: 0;
     /* border-radius: 5px; */
@@ -7393,9 +7397,23 @@ footer {
   padding: 2%;
   position: relative;
   z-index: 3;
-  background-color: var(--grey-color);
+  background-color: #000;
   padding-top: 5%;
   padding-bottom: 5%;
+}
+
+footer::before{
+  content: '';
+  width: 100%;
+  height: 100%;
+  background-image: url(../images/home/banner\ projects-03.png);
+  background-size: cover;
+  position: absolute;
+  background-attachment: fixed;
+  left: 0;
+  top: 0;
+  z-index: 0;
+  opacity: 0.5;
 }
 
 footer .footer-communicate {
@@ -7404,6 +7422,7 @@ footer .footer-communicate {
   width: 23%;
   justify-content: flex-start;
   text-align: justify;
+  z-index: 2;
 }
 
 footer .footer-communicate h3 {
@@ -7808,6 +7827,7 @@ footer .footer-communicate:nth-child(3) {
 .country-slider .owl-item img {
   width: 150px;
   height: 150px;
+  margin: 20px 0;
   object-fit: contain;
 }
 
