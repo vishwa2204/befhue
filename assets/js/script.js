@@ -2,6 +2,8 @@
 
 // Select elements
 let popupBtn = document.querySelector('.enquiry');
+let popupBtn2 = document.querySelector('.enquiry2');
+let popupBtn3 = document.querySelector('.enquiry3');
 let popup = document.querySelector('.popup-form');
 let closeBtn = document.querySelector('#close');
 // Check if the popup has already been shown
@@ -9,6 +11,26 @@ let closeBtn = document.querySelector('#close');
 // Show the popup only if it hasn't been shown before
 
   popupBtn.addEventListener("click", function () {
+
+    popup.style.scale = "1";
+     popup.style.opacity = "1"; // Show the popup
+    popup.classList.toggle('rot');
+    // if (popup.style.scale === "1") {
+    //   document.querySelector('.body').classList.toggle('blur'); 
+    // }; 
+  });
+
+  popupBtn2.addEventListener("click", function () {
+
+    popup.style.scale = "1";
+     popup.style.opacity = "1"; // Show the popup
+    popup.classList.toggle('rot');
+    // if (popup.style.scale === "1") {
+    //   document.querySelector('.body').classList.toggle('blur'); 
+    // }; 
+  });
+
+  popupBtn3.addEventListener("click", function () {
 
     popup.style.scale = "1";
      popup.style.opacity = "1"; // Show the popup
