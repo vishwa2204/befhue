@@ -42,13 +42,13 @@ counters.forEach(counter => {
 
 
 
-// const cursor = document.querySelector(".cursor-1");
+const cursor = document.querySelector(".cursor-1");
 
-// document.addEventListener("mousemove", (e) => {
-//   const { clientX: x, clientY: y } = e;
+document.addEventListener("mousemove", (e) => {
+  const { clientX: x, clientY: y } = e;
 
-//   cursor.style.transform = `translate(${x}px, ${y}px)`;
-// });
+  cursor.style.transform = `translate(${x}px, ${y}px)`;
+});
 
 
 // Reveal 
