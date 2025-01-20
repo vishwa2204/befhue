@@ -45,12 +45,12 @@
             <button id="close" class="close-btn"><i class="fa-solid fa-xmark"></i></button>
 
             <div class="popup-form-container">
-                <h2>Apply the Form</h2>
+                <h2>What we offer you?</h2>
                 <form method="POST" onsubmit="return contact(event)">
                     <input type="text" id="name" placeholder="Enter Your Name" required>
                     <input type="email" id="email" placeholder="Enter Your Email" required>
-                    <input type="number" id="number" placeholder="Enter Your Mobile Number" required>
-                    <textarea rows="5" id="message" placeholder="Message" required></textarea>
+                    <input type="number" id="number" placeholder="Enter Your Contact Number" required>
+                    <textarea rows="6" id="message" placeholder="Message" required></textarea>
                     <button class="submit-btn" type="submit">Submit</button>
                 </form>
             </div>
@@ -143,7 +143,7 @@
         <div class="nav-overlay"></div>
 
         <div class="enquiry">
-             <a href="#">Get Quotes</a>
+             <a href="#">Get a Quote</a>
         </div>
         <button class="ham-1">
             <div class="h-1"></div>
@@ -562,63 +562,41 @@
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <!-- Lightbox Elements -->
-
-
     <script>
-
-        var hamburger = document.querySelector('.nav-menus');
-        var hamBtn = document.querySelector('.ham-1');
-        var crossOne = document.querySelector('.h-1');
-        var crossTwo = document.querySelector('.h-2');
-        var crossThree = document.querySelector('.h-3');
-
-        hamBtn.addEventListener('click', () => {
-            hamburger.classList.toggle('pro-active');
-            crossOne.classList.toggle('h-cross1');
-            crossTwo.classList.toggle('h-cross2');
-            crossThree.classList.toggle('h-cross3');
-        });
-
-
-
-
+        //////////////////////// Form Popup /////////////////////////////////////////////
+    
+    // Select elements
+    let popupBtn = document.querySelector('.enquiry');
+    let popupBtn2 = document.querySelector('.enquiry2');
+    let popupBtn3 = document.querySelector('.enquiry3');
+    let popup = document.querySelector('.popup-form');
+    let closeBtn = document.querySelector('.close-btn');
+    // Check if the popup has already been shown
+    
+    // Show the popup only if it hasn't been shown before
+    
+    popupBtn.addEventListener("click", function () {
+    
+      popup.style.scale = "1";
+      popup.style.opacity = "1"; // Show the popup
+      popup.classList.toggle('rot');
+      // if (popup.style.scale === "1") {
+      //   document.querySelector('.body').classList.toggle('blur'); 
+      // }; 
+    });
+    
+    
+    // Close button functionality
+    closeBtn.addEventListener("click", function () {
+      popup.classList.toggle('rot');
+      popup.style.scale = "0"; // Hide the popup
+      popup.style.opacity = "0";
+    
+    });
+    //////////////////////// Navbar /////////////////////
+    
+    
     </script>
-
-<script>
-    function contact(event) {
-        // Prevent the default form submission behavior
-        event.preventDefault();
-
-        // Retrieve input values
-        var name = document.getElementById("name").value;
-        var email = document.getElementById("email").value;
-        var number = document.getElementById("number").value;
-        var message = document.getElementById("message").value;
-
-        // Validate fields
-        if (!name || !email || !number || !message) {
-           
-            return false; // Prevent further action
-            alert("Enter All Fields");
-        }
-
-        // Format the message content
-        var formattedMessage = encodeURIComponent(
-            "Name: " + name + "\n" +
-            "Email: " + email + "\n" +
-            "Mobile Number: +" + number + "\n" +
-            "Message: " + message
-        );
-
-        // Construct the WhatsApp URL
-        var url = "https://wa.me/+919342470592?text=" + formattedMessage;
-
-        // Open the WhatsApp URL in a new tab/window
-        window.open(url, '_blank');
-
-        return false; // Prevent form submission
-    }
-</script>
 
 </body>
 

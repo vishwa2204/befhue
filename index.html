@@ -154,7 +154,7 @@
         <div class="nav-overlay"></div>
 
         <div class="enquiry">
-            <a href="#">Get Quotes</a>
+            <a href="#">Get a Quote</a>
         </div>
         <button class="ham-1">
             <div class="h-1"></div>
@@ -930,6 +930,60 @@
         }
     </script>
 
+<script>
+    //////////////////////// Form Popup /////////////////////////////////////////////
+
+// Select elements
+let popupBtn = document.querySelector('.enquiry');
+let popupBtn2 = document.querySelector('.enquiry2');
+let popupBtn3 = document.querySelector('.enquiry3');
+let popup = document.querySelector('.popup-form');
+let closeBtn = document.querySelector('.close-btn');
+// Check if the popup has already been shown
+
+// Show the popup only if it hasn't been shown before
+
+popupBtn.addEventListener("click", function () {
+
+  popup.style.scale = "1";
+  popup.style.opacity = "1"; // Show the popup
+  popup.classList.toggle('rot');
+  // if (popup.style.scale === "1") {
+  //   document.querySelector('.body').classList.toggle('blur'); 
+  // }; 
+});
+
+popupBtn2.addEventListener("click", function () {
+  popup.style.scale = "1";
+  popup.style.opacity = "1"; // Show the popup
+  popup.classList.toggle('rot');
+  // if (popup.style.scale === "1") {
+  //   document.querySelector('.body').classList.toggle('blur'); 
+  // }; 
+});
+
+popupBtn3.addEventListener("click", function () {
+
+  popup.style.scale = "1";
+  popup.style.opacity = "1"; // Show the popup
+  popup.classList.toggle('rot');
+  // if (popup.style.scale === "1") {
+  //   document.querySelector('.body').classList.toggle('blur'); 
+  // }; 
+});
+
+
+// Close button functionality
+closeBtn.addEventListener("click", function () {
+  popup.classList.toggle('rot');
+  popup.style.scale = "0"; // Hide the popup
+  popup.style.opacity = "0";
+
+});
+//////////////////////// Navbar /////////////////////
+
+
+</script>
 
 
 
