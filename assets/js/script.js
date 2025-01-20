@@ -38,10 +38,6 @@ counters.forEach(counter => {
   observer.observe(counter);
 });
 
-
-
-
-
 const cursor = document.querySelector(".cursor-1");
 
 document.addEventListener("mousemove", (e) => {
