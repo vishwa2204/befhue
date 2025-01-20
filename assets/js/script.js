@@ -1,36 +1,34 @@
 //////////////////////// Form Popup /////////////////////////////////////////////
 
 // Select elements
+let popupBtn = document.querySelector('.enquiry');
 let popup = document.querySelector('.popup-form');
 let closeBtn = document.querySelector('#close');
-
 // Check if the popup has already been shown
-let isPopupShown = localStorage.getItem('isPopupShown');
 
 // Show the popup only if it hasn't been shown before
-if (!isPopupShown) {
-    window.addEventListener("load", function () {
-        setTimeout(function open() {
-            popup.style.scale = "1"; // Show the popup
-            popup.classList.toggle('rot');
-            if (popup.style.scale === "1") {
-                document.querySelector('.body').classList.toggle('blur'); // Add blur effect to the background
-            }
-        }, 1000); // Delay of 1 second before showing the popup
-    });
-}
+
+  popupBtn.addEventListener("click", function () {
+
+    popup.style.scale = "1"; // Show the popup
+    popup.classList.toggle('rot');
+    // if (popup.style.scale === "1") {
+    //   document.querySelector('.body').classList.toggle('blur'); 
+    // }; 
+  });
+
 
 // Close button functionality
 closeBtn.addEventListener("click", function () {
-    popup.classList.toggle('rot');
-    popup.style.scale = "0"; // Hide the popup
+  popup.classList.toggle('rot');
+  popup.style.scale = "0"; // Hide the popup
 
-    if (popup.style.scale === "0") {
-        document.querySelector('.body').classList.remove('blur'); // Remove blur effect
-    }
+  // if (popup.style.scale === "0") {
+  //   document.querySelector('.body').classList.remove('blur');
+  // }
 
-    // Mark popup as shown in localStorage to prevent it from showing again
-    localStorage.setItem('isPopupShown', 'true');
+  // Mark popup as shown in localStorage to prevent it from showing again
+  localStorage.setItem('isPopupShown', 'true');
 });
 //////////////////////// Navbar /////////////////////
 
@@ -78,14 +76,13 @@ counters.forEach(counter => {
 
 
 
-const cursor = document.querySelector(".cursor-1");
+// const cursor = document.querySelector(".cursor-1");
 
-document.addEventListener("mousemove", (e) => {
-  const { clientX: x, clientY: y } = e;
+// document.addEventListener("mousemove", (e) => {
+//   const { clientX: x, clientY: y } = e;
 
-  // Correctly position the circle with `translate(-50%, -50%)`
-  cursor.style.transform = `translate(${x}px, ${y}px)`;
-});
+//   cursor.style.transform = `translate(${x}px, ${y}px)`;
+// });
 
 
 // Reveal 
@@ -109,6 +106,6 @@ function reveal() {
       reveals[i].classList.remove('active');
     }
 
-    
+
   }
 }

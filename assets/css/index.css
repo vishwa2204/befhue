@@ -7945,7 +7945,7 @@ footer .footer-communicate:nth-child(3) {
 }
 
 .rot {
-  transform: translate(-50%, 0) rotateZ(360deg);
+  transform: translate(-50%, 0) ;
 }
 
 @media screen and (max-width:700px) {
