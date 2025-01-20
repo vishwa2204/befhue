@@ -10,7 +10,8 @@ let closeBtn = document.querySelector('#close');
 
   popupBtn.addEventListener("click", function () {
 
-    popup.style.scale = "1"; // Show the popup
+    popup.style.scale = "1";
+     popup.style.opacity = "1"; // Show the popup
     popup.classList.toggle('rot');
     // if (popup.style.scale === "1") {
     //   document.querySelector('.body').classList.toggle('blur'); 
@@ -22,7 +23,7 @@ let closeBtn = document.querySelector('#close');
 closeBtn.addEventListener("click", function () {
   popup.classList.toggle('rot');
   popup.style.scale = "0"; // Hide the popup
-
+  popup.style.opacity = "0";
   // if (popup.style.scale === "0") {
   //   document.querySelector('.body').classList.remove('blur');
   // }
