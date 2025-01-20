@@ -43,6 +43,28 @@
 
 <body>
 
+    <!--///////////////////// Popup the Form start /////////////////////////-->
+
+    <section class="popup-form">
+        <div class="popup-container">
+
+            <button id="close" class="close-btn"><i class="fa-solid fa-xmark"></i></button>
+
+            <div class="popup-form-container">
+                <h2>Apply the Form</h2>
+                <form method="POST" onsubmit="return contact(event)">
+                    <input type="text" id="name" placeholder="Enter Your Name" required>
+                    <input type="email" id="email" placeholder="Enter Your Email" required>
+                    <input type="number" id="number" placeholder="Enter Your Mobile Number" required>
+                    <textarea rows="5" id="message" placeholder="Message" required></textarea>
+                    <button class="submit-btn" type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!--///////////////// Popup the Form end//////////////////////////// -->
+
     <!-- Top of nav start -->
 
     <section class="top-nav ">
@@ -132,7 +154,7 @@
         <div class="nav-overlay"></div>
 
         <div class="enquiry">
-            <a href="contact.html">Lets Talk</a>
+            <a href="contact.html">Get Quotes</a>
         </div>
         <button class="ham-1">
             <div class="h-1"></div>
@@ -188,7 +210,8 @@
                         your brand through great design that delivers.
 
                     </p>
-                    <button type="button" class="button"><strong><a style="color: white; text-decoration: none;" href="about.html">Know More</a></strong> </button>
+                    <button type="button" class="button"><strong><a style="color: white; text-decoration: none;"
+                                href="about.html">Know More</a></strong> </button>
                     <!-- <a href="about.html" class="button"><strong>Know More</strong></a> -->
 
                     <!-- <a href="about.html" class="button"><strong>Know More</strong></a> -->
@@ -334,7 +357,7 @@
     </div>
     <!-------------- our service section end----------------------- -->
 
-  <!-- /////////////////////////counter section end/////////////////// -->
+    <!-- /////////////////////////counter section end/////////////////// -->
     <div class="editing-company-section">
         <div class="editing-company-container container">
             <div class="editing-company-boxes">
@@ -424,7 +447,8 @@
                         </div>
                     </div>
                     <hr class="tick">
-                    <button class="button"><strong><a href="contact.html" style="color: white; text-decoration: none;">Start A Project</a></strong> </button>
+                    <button class="button"><strong><a href="contact.html"
+                                style="color: white; text-decoration: none;">Start A Project</a></strong> </button>
                 </div>
             </div>
         </div>
@@ -447,7 +471,8 @@
                             <h6>Baking Pastry</h6>
                             <p>Logo Design
                             </p>
-                            <button class="button-gallery"><a href="portfolio.html" style="color: white; text-decoration: none;">READ CASE STUDY</a></button>
+                            <button class="button-gallery"><a href="portfolio.html"
+                                    style="color: white; text-decoration: none;">READ CASE STUDY</a></button>
 
                         </div>
                     </div>
@@ -461,7 +486,8 @@
                             <p>
                                 Packaging Design
                             </p>
-                            <button class="button-gallery"><a href="portfolio.html" style="color: white; text-decoration: none;">READ CASE STUDY</a></button>
+                            <button class="button-gallery"><a href="portfolio.html"
+                                    style="color: white; text-decoration: none;">READ CASE STUDY</a></button>
 
 
                         </div>
@@ -473,7 +499,8 @@
                             <h6>Sembian </h6>
                             <p>Branding
                             </p>
-                            <button class="button-gallery"><a href="portfolio.html" style="color:white; text-decoration: none;">READ CASE STUDY</a></button>
+                            <button class="button-gallery"><a href="portfolio.html"
+                                    style="color:white; text-decoration: none;">READ CASE STUDY</a></button>
 
 
                         </div>
@@ -488,7 +515,8 @@
                             <h6>Prolife </h6>
                             <p>Social media Posters
                             </p>
-                            <button class="button-gallery"><a href="portfolio.html" style="color:white; text-decoration: none;">READ CASE STUDY</a></button>
+                            <button class="button-gallery"><a href="portfolio.html"
+                                    style="color:white; text-decoration: none;">READ CASE STUDY</a></button>
 
 
 
@@ -500,7 +528,8 @@
                             <h6>Dreamcatcher </h6>
                             <p>Book design
                             </p>
-                            <button class="button-gallery"><a href="portfolio.html" style="color:white; text-decoration: none;">READ CASE STUDY</a></button>
+                            <button class="button-gallery"><a href="portfolio.html"
+                                    style="color:white; text-decoration: none;">READ CASE STUDY</a></button>
 
 
                         </div>
@@ -515,7 +544,8 @@
 
 
                             </p>
-                            <button class="button-gallery"><a href="portfolio.html" style="color:white; text-decoration: none;">READ CASE STUDY</a></button>
+                            <button class="button-gallery"><a href="portfolio.html"
+                                    style="color:white; text-decoration: none;">READ CASE STUDY</a></button>
 
 
                         </div>
@@ -556,7 +586,8 @@
 
 
                     <div class="guaranteed-button">
-                        <button class="button-guaranteed"><a href="contact.html" style="color: #ff004f; text-decoration: none;">START A PROJECT</a></button>
+                        <button class="button-guaranteed"><a href="contact.html"
+                                style="color: #ff004f; text-decoration: none;">START A PROJECT</a></button>
                     </div>
                     <div class="guaranteed-images-img">
                         <img src="assets/images/home/100 satois-04.png" />
@@ -605,7 +636,7 @@
                                     </div>
                                 </div>
                                 <div class="slide swiper-slide">
-                                   <img src="assets/images/testimonial/1.jpg" alt="testimonial-image" class="image" />
+                                    <img src="assets/images/testimonial/1.jpg" alt="testimonial-image" class="image" />
                                     <p>
                                         "Befhue redefined our visual identity with their innovative designs. Their
                                         expertise in crafting compelling business cards and promotional materials helped
@@ -758,7 +789,7 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <!-- Lightbox Elements -->
 
-    
+
     <script>
 
         var owl = $('.owl-carousel-testimonial');
@@ -774,7 +805,7 @@
                 smartSpeed: 3000,
                 responsive: {
                     0: {
-                        items:3
+                        items: 3
                     },
                     600: {
                         items: 4
@@ -852,7 +883,7 @@
             pagination: {
                 el: ".swiper-pagination",
                 clickable: true,
-                
+
             },
             navigation: {
                 nextEl: ".swiper-button-next",
@@ -861,6 +892,43 @@
         });
 
     </script>
+
+
+<script>
+    function contact(event) {
+        // Prevent the default form submission behavior
+        event.preventDefault();
+
+        // Retrieve input values
+        var name = document.getElementById("name").value;
+        var email = document.getElementById("email").value;
+        var number = document.getElementById("number").value;
+        var message = document.getElementById("message").value;
+
+        // Validate fields
+        if (!name || !email || !number || !message) {
+           
+            return false; // Prevent further action
+            alert("Enter All Fields");
+        }
+
+        // Format the message content
+        var formattedMessage = encodeURIComponent(
+            "Name: " + name + "\n" +
+            "Email: " + email + "\n" +
+            "Mobile Number: +" + number + "\n" +
+            "Message: " + message
+        );
+
+        // Construct the WhatsApp URL
+        var url = "https://wa.me/+919342470592?text=" + formattedMessage;
+
+        // Open the WhatsApp URL in a new tab/window
+        window.open(url, '_blank');
+
+        return false; // Prevent form submission
+    }
+</script>
 
 
 

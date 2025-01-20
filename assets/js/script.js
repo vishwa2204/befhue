@@ -1,4 +1,34 @@
+//////////////////////// Form Popup /////////////////////////////////////////////
 
+let popup = document.querySelector('.popup-form');
+let closeBtn = document.querySelector('#close');
+
+window.addEventListener("load", function () {
+    this.setTimeout(
+        function open() {
+            popup.style.scale = "1";
+            popup.classList.toggle('rot')
+            if (popup.style.scale = "1") {
+                document.querySelector('.body').classList.toggle('blur');
+            }
+
+        }, 1000
+    );
+
+
+});
+
+closeBtn.addEventListener("click", function () {
+    popup.classList.toggle('rot')
+    popup.style.scale = "0";
+
+    if (popup.style.scale = "0") {
+        document.querySelector('.body').classList.remove('blur');
+
+    }
+});
+
+// ////////////////////////Navbar /////////////////////
 //---------------- counter section start-------------------------------------------------------
 
 const counters = document.querySelectorAll('.count');
