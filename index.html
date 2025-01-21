@@ -42,6 +42,8 @@
 </head>
 
 <body>
+    <div class="cursor-1 d-none d-lg-flex"></div>
+    <div class="cursor-2 d-none d-lg-flex"></div>
 
     <!--///////////////////// Popup the Form start /////////////////////////-->
 
@@ -459,7 +461,6 @@
 
 
 
-        </p>
         <div class="about-academyimg">
             <div class="about-academycontainer container">
                 <h5 style="color:#ff004f">See our Award Winning Agency Work</h5>
@@ -561,10 +562,14 @@
     <!-- loop video start -->
     <div class="marquee-w">
         <div class="marquee">
-            <span><img src="assets/images/png/befhue png-05.png" alt=""><img src="assets/images/png/befhue png-05.png" alt=""><img src="assets/images/png/befhue png-05.png" alt=""><img src="assets/images/png/befhue png-05.png" alt=""></span>
+            <span><img src="assets/images/png/befhue png-05.png" alt=""><img src="assets/images/png/befhue png-05.png"
+                    alt=""><img src="assets/images/png/befhue png-05.png" alt=""><img
+                    src="assets/images/png/befhue png-05.png" alt=""></span>
         </div>
         <div class="marquee marquee2">
-            <span><img src="assets/images/png/befhue png-05.png" alt=""><img src="assets/images/png/befhue png-05.png" alt=""><img src="assets/images/png/befhue png-05.png" alt=""><img src="assets/images/png/befhue png-05.png" alt=""></span>
+            <span><img src="assets/images/png/befhue png-05.png" alt=""><img src="assets/images/png/befhue png-05.png"
+                    alt=""><img src="assets/images/png/befhue png-05.png" alt=""><img
+                    src="assets/images/png/befhue png-05.png" alt=""></span>
         </div>
     </div>
     <!-- loop video end  -->
@@ -937,60 +942,60 @@
         }
     </script>
 
-<script>
-    //////////////////////// Form Popup /////////////////////////////////////////////
+    <script>
+        //////////////////////// Form Popup /////////////////////////////////////////////
 
-// Select elements
-let popupBtn = document.querySelector('.enquiry');
-let popupBtn2 = document.querySelector('.enquiry2');
-let popupBtn3 = document.querySelector('.enquiry3');
-let popup = document.querySelector('.popup-form');
-let closeBtn = document.querySelector('.close-btn');
-// Check if the popup has already been shown
+        // Select elements
+        let popupBtn = document.querySelector('.enquiry');
+        let popupBtn2 = document.querySelector('.enquiry2');
+        let popupBtn3 = document.querySelector('.enquiry3');
+        let popup = document.querySelector('.popup-form');
+        let closeBtn = document.querySelector('.close-btn');
+        // Check if the popup has already been shown
 
-// Show the popup only if it hasn't been shown before
+        // Show the popup only if it hasn't been shown before
 
-popupBtn.addEventListener("click", function () {
+        popupBtn.addEventListener("click", function () {
 
-  popup.style.scale = "1";
-  popup.style.opacity = "1"; // Show the popup
-  popup.classList.toggle('rot');
-  // if (popup.style.scale === "1") {
-  //   document.querySelector('.body').classList.toggle('blur'); 
-  // }; 
-});
+            popup.style.scale = "1";
+            popup.style.opacity = "1"; // Show the popup
+            popup.classList.toggle('rot');
+            // if (popup.style.scale === "1") {
+            //   document.querySelector('.body').classList.toggle('blur'); 
+            // }; 
+        });
 
-popupBtn2.addEventListener("click", function () {
-  popup.style.scale = "1";
-  popup.style.opacity = "1"; // Show the popup
-  popup.classList.toggle('rot');
-  // if (popup.style.scale === "1") {
-  //   document.querySelector('.body').classList.toggle('blur'); 
-  // }; 
-});
+        popupBtn2.addEventListener("click", function () {
+            popup.style.scale = "1";
+            popup.style.opacity = "1"; // Show the popup
+            popup.classList.toggle('rot');
+            // if (popup.style.scale === "1") {
+            //   document.querySelector('.body').classList.toggle('blur'); 
+            // }; 
+        });
 
-popupBtn3.addEventListener("click", function () {
+        popupBtn3.addEventListener("click", function () {
 
-  popup.style.scale = "1";
-  popup.style.opacity = "1"; // Show the popup
-  popup.classList.toggle('rot');
-  // if (popup.style.scale === "1") {
-  //   document.querySelector('.body').classList.toggle('blur'); 
-  // }; 
-});
-
-
-// Close button functionality
-closeBtn.addEventListener("click", function () {
-  popup.classList.toggle('rot');
-  popup.style.scale = "0"; // Hide the popup
-  popup.style.opacity = "0";
-
-});
-//////////////////////// Navbar /////////////////////
+            popup.style.scale = "1";
+            popup.style.opacity = "1"; // Show the popup
+            popup.classList.toggle('rot');
+            // if (popup.style.scale === "1") {
+            //   document.querySelector('.body').classList.toggle('blur'); 
+            // }; 
+        });
 
 
-</script>
+        // Close button functionality
+        closeBtn.addEventListener("click", function () {
+            popup.classList.toggle('rot');
+            popup.style.scale = "0"; // Hide the popup
+            popup.style.opacity = "0";
+
+        });
+        //////////////////////// Navbar /////////////////////
+
+
+    </script>
 
 
 

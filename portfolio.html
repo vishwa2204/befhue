@@ -23,7 +23,7 @@
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
 
     <!-- fontawesome elements -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/lib  s/font-awesome/6.7.2/css/all.min.css">
 
     <!-- Link Swiper's CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
@@ -36,6 +36,7 @@
 
 <body>
     <div class="cursor-1 d-none d-lg-flex"></div>
+    <div class="cursor-2 d-none d-lg-flex"></div>
 
     <!--///////////////////// Popup the Form start /////////////////////////-->
 
@@ -143,7 +144,7 @@
         <div class="nav-overlay"></div>
 
         <div class="enquiry">
-             <a href="#">Get a Quote</a>
+            <a href="#">Get a Quote</a>
         </div>
         <button class="ham-1">
             <div class="h-1"></div>
@@ -234,6 +235,15 @@
                             <h2 style="color: #fff;" class="text-center mb-5">VIEW OUR WORK</h2>
                             <div class="portImage-container" style="background-color: #303030;">
                                 <div class="d-flex flex-wrap justify-content-center video-frames">
+                                    <div class="iframe">
+                                        <iframe
+                                            src="https://drive.google.com/file/d/1X4Ggm4T14ddc5Reo2ZjM40EckoGDtcW6/preview"
+                                            allow="autoplay"></iframe>
+                                        <div class="frame-content">
+                                            <span class="line"></span>
+                                            <span class="title-frame">Wedding Video Editing</span>
+                                        </div>
+                                    </div>
                                     <div class="iframe">
                                         <iframe
                                             src="https://drive.google.com/file/d/1MLVs6CHDDGEMLSBfmKekLxBBTtI3q8ku/preview"
@@ -379,7 +389,9 @@
                                         </div>
                                     </div>
                                     <div class="iframe">
-                                        <iframe src="https://drive.google.com/file/d/1s1S5finzhkKXW4OwAhophUJPFLsYxKP7/preview"  allow="autoplay"></iframe>
+                                        <iframe
+                                            src="https://drive.google.com/file/d/1s1S5finzhkKXW4OwAhophUJPFLsYxKP7/preview"
+                                            allow="autoplay"></iframe>
                                         <div class="frame-content">
                                             <span class="line"></span>
                                             <span class="title-frame">Product Ads Editing</span>
@@ -405,7 +417,7 @@
     <footer>
         <div class="footer-communicate">
             <h3 style="color: white;">About befhue</h3>
-             <p>We’re graphic design and video editing agency, turning your
+            <p>We’re graphic design and video editing agency, turning your
                 brand’s ideas into beautiful visual experiences. We
                 specialise in logo design, brand identity, web design,
                 packaging design and digital marketing. Our team of graphic
@@ -583,38 +595,38 @@
     <!-- Lightbox Elements -->
     <script>
         //////////////////////// Form Popup /////////////////////////////////////////////
-    
-    // Select elements
-    let popupBtn = document.querySelector('.enquiry');
-    let popupBtn2 = document.querySelector('.enquiry2');
-    let popupBtn3 = document.querySelector('.enquiry3');
-    let popup = document.querySelector('.popup-form');
-    let closeBtn = document.querySelector('.close-btn');
-    // Check if the popup has already been shown
-    
-    // Show the popup only if it hasn't been shown before
-    
-    popupBtn.addEventListener("click", function () {
-    
-      popup.style.scale = "1";
-      popup.style.opacity = "1"; // Show the popup
-      popup.classList.toggle('rot');
-      // if (popup.style.scale === "1") {
-      //   document.querySelector('.body').classList.toggle('blur'); 
-      // }; 
-    });
-    
-    
-    // Close button functionality
-    closeBtn.addEventListener("click", function () {
-      popup.classList.toggle('rot');
-      popup.style.scale = "0"; // Hide the popup
-      popup.style.opacity = "0";
-    
-    });
-    //////////////////////// Navbar /////////////////////
-    
-    
+
+        // Select elements
+        let popupBtn = document.querySelector('.enquiry');
+        let popupBtn2 = document.querySelector('.enquiry2');
+        let popupBtn3 = document.querySelector('.enquiry3');
+        let popup = document.querySelector('.popup-form');
+        let closeBtn = document.querySelector('.close-btn');
+        // Check if the popup has already been shown
+
+        // Show the popup only if it hasn't been shown before
+
+        popupBtn.addEventListener("click", function () {
+
+            popup.style.scale = "1";
+            popup.style.opacity = "1"; // Show the popup
+            popup.classList.toggle('rot');
+            // if (popup.style.scale === "1") {
+            //   document.querySelector('.body').classList.toggle('blur'); 
+            // }; 
+        });
+
+
+        // Close button functionality
+        closeBtn.addEventListener("click", function () {
+            popup.classList.toggle('rot');
+            popup.style.scale = "0"; // Hide the popup
+            popup.style.opacity = "0";
+
+        });
+        //////////////////////// Navbar /////////////////////
+
+
     </script>
 
 </body>

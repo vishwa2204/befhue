@@ -37,16 +37,39 @@ const observer = new IntersectionObserver((entries, observer) => {
 counters.forEach(counter => {
   observer.observe(counter);
 });
+/////////////////////////////
+const cursor1 = document.querySelector(".cursor-1"); // Big circle
+const cursor2 = document.querySelector(".cursor-2"); // Small circle
 
-const cursor = document.querySelector(".cursor-1");
+let mouseX = 0, mouseY = 0; // Track the mouse's actual position
+let smallCircleX = 0, smallCircleY = 0; // Small circle's interpolated position
 
+// Update the mouse coordinates on mouse move
 document.addEventListener("mousemove", (e) => {
-  const { clientX: x, clientY: y } = e;
+  mouseX = e.clientX; // Mouse X position
+  mouseY = e.clientY; // Mouse Y position
 
-  cursor.style.transform = `translate(${x}px, ${y}px)`;
+  // Move the big circle directly
+  cursor1.style.transform = `translate(${mouseX}px, ${mouseY}px)`;
+  cursor1.style.margin = '-10px -10px';
 });
 
+// Smooth animation for the small circle
+function animate() {
+  // Interpolate the small circle's position for smooth trailing
+  smallCircleX += (mouseX - smallCircleX) * 0.1; // Adjust speed by changing 0.1
+  smallCircleY += (mouseY - smallCircleY) * 0.1;
 
+  // Move the small circle
+  cursor2.style.transform = `translate(${smallCircleX}px, ${smallCircleY}px)`;
+  cursor2.style.margin = '-4px -4px';
+
+  requestAnimationFrame(animate); // Keep the animation running
+}
+
+// Start the animation
+animate();
+///////////////////////////////
 // Reveal 
 
 window.addEventListener('scroll', reveal);

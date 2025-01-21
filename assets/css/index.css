@@ -7835,7 +7835,6 @@ footer .footer-communicate:nth-child(3) {
   display: none !important;
 }
 
-
 .cursor-1 {
   position: fixed;
   width: 30px;
@@ -7843,13 +7842,23 @@ footer .footer-communicate:nth-child(3) {
   border: 2px solid var(--main-color);
   border-radius: 50%;
   pointer-events: none;
-  transform: translate(-50%, -50%);
-  transition: transform 0.1s ease-out;
+  transition: 0.01s linear;
+  transform: translate(-50%, -50%); /* Centers the circle */
   z-index: 10000 !important;
+  margin-bottom: 50% !important;
 }
 
-
-
+.cursor-2 {
+  position: fixed;
+  width: 15px;
+  height: 15px;
+  border: 2px solid var(--main-color);
+  border-radius: 50%;
+  pointer-events: none;
+  transition: 0.03s linear;
+  transform: translate(-50%, -50%); /* Centers the smaller circle */
+  z-index: 9999 !important;
+}
 
 .reveal {
   position: relative;
