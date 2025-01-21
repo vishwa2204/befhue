@@ -431,19 +431,21 @@ h6 {
 /* ..............video banner  page start.......... */
 .video-container {
   width: 100% !important;
-  height: 80vh !important;
+  height: auto !important;
   position: relative;
   /* Set the height as desired */
 }
 
+
 .video-element {
   width: 100%;
   /* Make sure the video fills its container */
-  height: 100%;
+  height: 500px;
   /* Make sure the video fills its container */
   object-fit: cover;
 
 }
+
 
 .video-container::before {
   content: '';
@@ -710,7 +712,7 @@ hr.ourservice-horizondalrole {
   /* background-image: url(../images/png/befhue\ png-05.png); */
   /* background-size: contain; */
   /* Match the container height */
-  width:100% !important ;
+  width: 100% !important;
   height: 100px;
   display: flex;
   align-items: center;
@@ -718,7 +720,7 @@ hr.ourservice-horizondalrole {
   animation: marquee 10s linear infinite;
 }
 
-.marquee span img{
+.marquee span img {
   width: 25% !important;
 }
 
@@ -7402,7 +7404,7 @@ footer {
   padding-bottom: 5%;
 }
 
-footer::before{
+footer::before {
   content: '';
   width: 100%;
   height: 100%;
@@ -7843,7 +7845,8 @@ footer .footer-communicate:nth-child(3) {
   border-radius: 50%;
   pointer-events: none;
   transition: 0.01s linear;
-  transform: translate(-50%, -50%); /* Centers the circle */
+  transform: translate(-50%, -50%);
+  /* Centers the circle */
   z-index: 10000 !important;
   margin-bottom: 50% !important;
 }
@@ -7856,7 +7859,8 @@ footer .footer-communicate:nth-child(3) {
   border-radius: 50%;
   pointer-events: none;
   transition: 0.03s linear;
-  transform: translate(-50%, -50%); /* Centers the smaller circle */
+  transform: translate(-50%, -50%);
+  /* Centers the smaller circle */
   z-index: 9999 !important;
 }
 
@@ -7954,7 +7958,8 @@ footer .footer-communicate:nth-child(3) {
   margin-bottom: 3%;
   border-radius: 0px;
   width: 100%;
-  padding: 2% 2%;box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding: 2% 2%;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   border: none;
 }
 
@@ -7988,7 +7993,7 @@ footer .footer-communicate:nth-child(3) {
 }
 
 .rot {
-  transform: translate(-50%, 0) ;
+  transform: translate(-50%, 0);
 }
 
 @media screen and (max-width:700px) {
@@ -8016,7 +8021,7 @@ footer .footer-communicate:nth-child(3) {
 }
 
 
-.overlay-image{
+.overlay-image {
   width: 100%;
   height: 100px;
   position: absolute;
@@ -8024,6 +8029,6 @@ footer .footer-communicate:nth-child(3) {
   left: 0;
 }
 
-.hr{
+.hr {
   margin: 0 !important;
 }
