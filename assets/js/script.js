@@ -70,6 +70,7 @@ function animate() {
 // Start the animation
 animate();
 ///////////////////////////////
+
 // Reveal 
 
 window.addEventListener('scroll', reveal);
